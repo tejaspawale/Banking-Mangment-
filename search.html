@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Search form </title>
+</head>
+<body>
+<center>
+<font color = "navy blue">
+<h1> Banking search form </h1>
+</font>
+</center>
+{% for row in result %}
+<form>
+Account No. :
+<input type="text" name="AccountNo" value="{{ row[0] }}" readonly/>
+</br>
+Name :
+<input type="text" name="Name" value="{{ row[1] }}" readonly/>
+</br>
+Mobile No : 
+<input type="text" name="MobileNo" value="{{ row[2] }}" readonly/>
+</br> 
+Email:
+<input type="text" name="Email" value="{{ row[3] }}" readonly/>
+</br>
+Date of Birth :
+<input type="text" name="DateofBirth" value="{{ row[4] }}" readonly/>
+</br>
+Nationalty :
+<input type="text" name="Nationalty" value="{{ row[5] }}" readonly/>
+</br>
+Caste :
+<input type="text" name="Caste" value="{{ row[6] }}" readonly/>
+</br>
+Gender :
+<input type="text" name="Gender" value="{{ row[7] }}" readonly/>
+</br>
+Address :
+<input type="text" name="Address" value="{{ row[8] }}" readonly/>
+</br>
+Account Type :
+<input type="text" name="AccountType" value="{{ row[9] }}" readonly/>
+</br>
+Security Question:
+<input type="text" name="SecurityQuestion" value="{{ row[10] }}" readonly/>
+</br>
+</form>
+{% endfor %}
+</body>
+</html>

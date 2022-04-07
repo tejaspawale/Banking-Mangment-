@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Account Details</title>
+</head>
+<body>
+<center>
+<h1>Banking System</h1>
+<br/>
+<table border="3"
+<thead>
+<tr>
+<th>AccountNo</th>
+<th>Name</th>
+<th>Mobile No</th>
+<th>Email</th>
+<th>DateofBirth</th>
+<th>Nationalty</th>
+<th>Caste</th>
+<th>Gender</th>
+<th>Address</th>
+<th>AccountType</th>
+<th>SecurityQuestion</th>
+</tr>
+</thead>
+<tbody>
+{% for row in result %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+<td>{{ row[3] }}</td>
+<td>{{ row[4] }}</td>
+<td>{{ row[5] }}</td>
+<td>{{ row[6] }}</td>
+<td>{{ row[7] }}</td>
+<td>{{ row[8] }}</td>
+<td>{{ row[9] }}</td>
+<td>{{ row[10] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
